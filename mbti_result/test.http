@@ -1,0 +1,22 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+  {
+    "contents": [
+      {
+        "parts": [
+          {
+            "inline_data": {
+              "mime_type": "image/png",
+              "data": "{{ $node["mbti_a_img"].json.data }}"
+            }
+          },
+          {
+            "text": "{{ $json.prompt }}"
+          }
+        ]
+      }
+  }
+
