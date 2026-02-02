@@ -1,0 +1,52 @@
+An Instagram poll/choice cover illustration (1:1 square) with Korean text rendered directly in the image, optimized for MOBILE readability (ample whitespace, smaller text blocks, clean hierarchy). Mood goal: “찔리고 킹받는” is driven by the wording, but the DESIGN must feel modern, sleek, and not scary—NO harsh warning-red dominance, NO aggressive lightning, NO horror vibe. Use a contemporary Korean webtoon + editorial UI poster vibe: crisp typography, subtle ink outline accents, light paper texture, soft watercolor wash, minimal halftone grain, and a fresh green-forward palette (mint/sage/soft forest green) with neutral charcoal text.
+
+LAYOUT (make it feel HORIZONTAL inside a 1:1 square):
+	•	Top 12–15%: situation header line centered.
+	•	Middle 65–70%: ONE wide horizontal comparison strip (not two tall cards). This strip contains LEFT and RIGHT hook boxes with a compact “vs” between them.
+	•	Left edge label: MBTI_A displayed as a bold tag (“{{ $json.MBTI_A }}”) aligned left.
+	•	Left hook box: a rounded rectangle box to the RIGHT of the MBTI_A label containing “{{ $json.A_VIRAL_HOOK }}” in 2–3 short lines max (avoid huge font; prioritize legibility).
+	•	Center: small “vs” text (lowercase “vs” or “VS”), plus an optional thin divider line (no lightning bolt).
+	•	Right hook box: a rounded rectangle box to the LEFT of the MBTI_B label containing “{{ $json.B_VIRAL_HOOK }}” in 2–3 short lines max.
+	•	Right edge label: MBTI_B displayed as a bold tag (“{{ $json.MBTI_B }}”) aligned right.
+	•	Bottom 15–18%: CTA text centered. IMPORTANT: choose exactly ONE CTA line from the allowed list below (do not add any other CTA text).
+
+COLOR / STYLE (green-forward, modern, not scary):
+	•	Background: clean off-white paper texture with very subtle grain.
+	•	Main accents: mint green / sage green / soft forest green gradients and watercolor washes (light and airy), with small tasteful sparkles or UI dots (very minimal, no hearts).
+	•	Cards/boxes: soft rounded rectangles with thin charcoal outline + subtle shadow (modern UI, not comic slapstick).
+	•	Typography: modern Korean sans-serif (clean, slightly condensed for readability), strong bold for MBTI tags, regular/medium for hooks; avoid overly cute rounded fonts.
+	•	Add small, sophisticated attention cues (tiny underline strokes, soft highlight bars behind key words, minimal arrow/dot accents). NO hazard stripes, NO angry starbursts, NO warning-red dominance.
+
+TEXT RENDERING REQUIREMENTS (must be perfectly legible Korean, rendered as real text in the image):
+	1.	Situation top text: “{{ $json.SITUATION }}” — dark charcoal, medium size, centered.
+	2.	Left MBTI tag: “{{ $json.MBTI_A }}” — bold, large, dark charcoal/navy, aligned left.
+	3.	Left hook inside its box: “{{ $json.A_VIRAL_HOOK }}” — dark charcoal, medium size, comfortable line spacing, max 2–3 lines.
+	4.	Center “vs” — small, minimalist, charcoal; optional thin divider line.
+	5.	Right hook inside its box: “{{ $json.B_VIRAL_HOOK }}” — dark charcoal, medium size, max 2–3 lines.
+	6.	Right MBTI tag: “{{ $json.MBTI_B }}” — bold, large, dark charcoal/navy, aligned right.
+	7.	Bottom CTA: pick EXACTLY ONE of the following Korean lines, centered, bold, medium-large, with a subtle green underline highlight (no additional words):
+	•	“이거 누구 생각남?? ㅋㅋ”
+	•	“너 지금 누가 떠올랐어??”
+	•	“이거 그 사람이다… 맞지?”
+	•	“찔린 사람 손✋(댓글로)”
+	•	“반박은 댓글로 받음”
+	•	“나만 이럼? ㅋㅋ”
+	•	“이거 인정?”
+	•	“찔리면 댓글 남겨…”
+
+CRITICAL:
+	•	No characters/people/animals and no extra Korean phrases beyond the specified text.
+	•	Avoid oversized fonts; ensure ample padding so every line is readable at phone size.
+	•	Keep hooks readable: limit each hook to 2–3 lines with generous line spacing; do not cram text.
+	•	Overall vibe: trendy 2026 Instagram design—clean, airy, green-toned, polished—while the hooks deliver the “찔림/킹받음” punch.
+
+
+=== USER ===
+Generate 1 CTA image prompt WITH Korean text rendered in the image for Instagram carousel ending.
+
+INPUT DATA:
+- Situation: {{ $json.SITUATION }}
+- Character A MBTI Type: {{ $json.MBTI_A }}
+- Character A Viral Hook: {{ $json.A_VIRAL_HOOK }}
+- Character B MBTI Type: {{ $json.MBTI_B }}
+- Character B Viral Hook: {{ $json.B_VIRAL_HOOK }}
